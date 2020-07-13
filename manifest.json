@@ -1,0 +1,20 @@
+{
+
+  "description": "AWS SAML relay to localhost webserver + tweetnacl encryption",
+  "manifest_version": 2,
+  "name": "saml-secure-relay",
+  "version": "1.0.1",
+  "homepage_url": "https://github.com/francisg-onfido/saml-secure-relay",
+  "icons": {
+    "48": "pen.svg"
+  },
+
+  "permissions": [
+    "webRequest", "https://signin.aws.amazon.com/*", "http://127.0.0.1:31415/*"
+  ],
+
+  "background": {
+    "scripts": ["background.js", "tweetnacl.js", "tweetnacl-util.js"]
+  }
+
+}
